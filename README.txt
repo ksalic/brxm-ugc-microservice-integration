@@ -7,6 +7,11 @@ From the project root folder, execute:
     mvn clean verify
     mvn -P cargo.run
 
+Run the User Generated Content MicroService:
+
+    cd jh-ugc
+    ./mvnw
+
 By default this includes and bootstraps repository data from the repository-data/development module,
 which is deployed by cargo to the Tomcat shared/lib.
 If you want or need to start *without* bootstrapping the development data, for example when testing
