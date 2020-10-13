@@ -1,0 +1,17 @@
+definitions:
+  config:
+    /hippo:configuration/hippo:derivatives/category:
+      jcr:primaryType: hipposys:deriveddefinition
+      hipposys:classname: org.example.CategoryDerivedFunction
+      hipposys:nodetype: myproject:category
+      hipposys:serialver: 1
+      /hipposys:accessed:
+        jcr:primaryType: hipposys:propertyreferences
+        /openuid:
+          jcr:primaryType: hipposys:relativepropertyreference
+          hipposys:relPath: myproject:category
+      /hipposys:derived:
+        jcr:primaryType: hipposys:propertyreferences
+        /path:
+          jcr:primaryType: hipposys:relativepropertyreference
+          hipposys:relPath: myproject:categoryId

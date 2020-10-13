@@ -1,0 +1,68 @@
+{
+  "name": "UserGeneratedContent",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "text",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "date",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "ipAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "referenceId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "channelId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "recent",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "state",
+      "fieldType": "UgcState",
+      "fieldValues": "OPEN,CLOSE"
+    },
+    {
+      "fieldName": "publicationState",
+      "fieldType": "PublicationState",
+      "fieldValues": "PUBLISHED,UNPUBLISHED"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "userGeneratedContent",
+      "relationshipName": "moderator",
+      "otherEntityField": "login"
+    }
+  ],
+  "changelogDate": "20201012134235",
+  "entityTableName": "user_generated_content",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ugc"]
+}

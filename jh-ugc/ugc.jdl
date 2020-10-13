@@ -1,0 +1,68 @@
+application {
+  config {
+    applicationType monolith
+    authenticationType jwt
+    baseName ugc
+    blueprints []
+    buildTool maven
+    cacheProvider ehcache
+    clientFramework react
+    clientPackageManager npm
+    clientTheme flatly
+    clientThemeVariant primary
+    creationTimestamp 1602486219160
+    databaseType mongodb
+    devDatabaseType mongodb
+    dtoSuffix DTO
+    embeddableLaunchScript false
+    enableHibernateCache false
+    enableSwaggerCodegen false
+    enableTranslation false
+    jhiPrefix jhi
+    jhipsterVersion "6.10.1"
+    jwtSecretKey "ZGIxMzhiN2U3OTY3OTY5OWQ5MDJkZmFlODg1OWVhNjI3YjUzY2MxNTI4Yzg3OWIwZjVlYTg3YzllZTU3NzVmMTU5NmY5ZjNlOGQ3NzIzZmI2M2VmYjg4MTM1OTQ4MjI0MWI2ZGJmYTUzMDdiYWM2YzMzMzIyNjFlNTUwOTAzMjY="
+    languages [en, fr]
+    messageBroker false
+    nativeLanguage en
+    otherModules []
+    packageName org.example.ugc
+    prodDatabaseType mongodb
+    searchEngine false
+    serverPort 9090
+    serviceDiscoveryType false
+    skipClient false
+    skipServer false
+    skipUserManagement false
+    testFrameworks [gatling]
+    useSass true
+    websocket false
+  }
+  entities *
+}
+entity UserGeneratedContent{
+  name String
+  email String
+  text TextBlob
+  date ZonedDateTime
+  ipAddress String
+  referenceId String
+  channelId String
+  recent Boolean
+  state UgcState
+  publicationState PublicationState
+}
+
+enum UgcState {
+  OPEN,
+  CLOSE
+}
+enum PublicationState {
+  PUBLISHED,
+  UNPUBLISHED
+}
+
+relationship ManyToOne {
+    UserGeneratedContent{moderator(login)} to User
+}
+
+

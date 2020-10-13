@@ -1,0 +1,25 @@
+entity UserGeneratedContent{
+  name String
+  email String
+  text TextBlob
+  date ZonedDateTime
+  ipAddress String
+  referenceId String
+  channelId String
+  recent Boolean
+  state UgcState
+  publicationState PublicationState
+}
+
+enum UgcState {
+  OPEN,
+  CLOSE
+}
+enum PublicationState {
+  PUBLISHED,
+  UNPUBLISHED
+}
+
+relationship ManyToOne {
+    UserGeneratedContent{moderator(login)} to User
+}

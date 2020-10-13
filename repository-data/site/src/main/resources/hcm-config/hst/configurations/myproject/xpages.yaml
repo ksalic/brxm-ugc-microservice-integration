@@ -1,0 +1,40 @@
+definitions:
+  config:
+    /hst:hst/hst:configurations/myproject/hst:xpages:
+      jcr:primaryType: hst:xpages
+      /landing-page:
+        jcr:primaryType: hst:xpage
+        hst:label: Landing Page
+        hst:referencecomponent: hst:abstractpages/base
+        /main:
+          jcr:primaryType: hst:containercomponent
+          hippo:identifier: f61a6fa0-9e78-4a05-b1f2-88676e91669f
+          hst:xtype: HST.vBox
+          /content:
+            jcr:primaryType: hst:containeritemcomponent
+            hst:componentclassname: org.onehippo.cms7.essentials.components.EssentialsContentComponent
+            hst:label: Content
+      /category-page:
+        jcr:primaryType: hst:xpage
+        hst:label: 'Category Landing Page (4 zones: Top, Left, Right, Bottom)'
+        hst:referencecomponent: hst:abstractpages/base-secondary
+        /main:
+          jcr:primaryType: hst:component
+          hst:componentclassname: org.example.component.CategoryComponent
+          hst:template: category-main
+          /top:
+            jcr:primaryType: hst:containercomponent
+            hippo:identifier: f61a6fa0-9e78-4a05-b1f2-88676e91669a
+            hst:xtype: HST.vBox
+          /left:
+            jcr:primaryType: hst:containercomponent
+            hippo:identifier: f61a6fa0-9e78-4a05-b1f2-88676e91669a
+            hst:xtype: HST.vBox
+          /right:
+            jcr:primaryType: hst:containercomponent
+            hippo:identifier: f61a6fa0-9e78-4a05-b1f2-88676e91669b
+            hst:xtype: HST.vBox
+          /bottom:
+            jcr:primaryType: hst:containercomponent
+            hippo:identifier: f61a6fa0-9e78-4a05-b1f2-88676e91669c
+            hst:xtype: HST.vBox

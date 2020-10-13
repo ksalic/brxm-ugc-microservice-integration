@@ -1,0 +1,5 @@
+/hst:hst/hst:configurations/myproject/hst:workspace/hst:containers/newspage/main/comments:
+  jcr:primaryType: hst:containeritemcomponent
+  hst:componentclassname: org.example.components.FormComponent
+  hst:label: Comments
+  hst:template: comments

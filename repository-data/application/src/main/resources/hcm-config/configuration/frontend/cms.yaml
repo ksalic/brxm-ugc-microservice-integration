@@ -1,0 +1,21 @@
+definitions:
+  config:
+    /hippo:configuration/hippo:frontend/cms/ui-extensions/category:
+      jcr:primaryType: frontend:uiExtension
+      jcr:mixinTypes: ['hippostd:relaxed']
+      frontend:clientid: abc123
+      frontend:config: '{"dataMode":"single", "autoSearch":false, "title":"Category
+        Picker","size":"large", "application": "category", "query": "", "pageSize"
+        :"100", "clientId": "abc123"}'
+      frontend:displayName: External Document Picker
+      frontend:extensionPoint: document.field
+      frontend:initialHeightInPixels: 100
+      frontend:url: https://d381zp6o8iqqvl.cloudfront.net/
+    /hippo:configuration/hippo:frontend/cms/cms-static/user-generated-content:
+      jcr:primaryType: frontend:plugin
+      jcr:mixinTypes: ['frontend:navigationitem']
+      frontend:appPath: user-generated-content
+      hipposys:userrole: xm.cms.user
+      iframe.src: http://localhost:9090/user-generated-content
+      plugin.class: org.bloomreach.forge.iframeperspective.IFramePerspective2
+      wicket.id: service.tab

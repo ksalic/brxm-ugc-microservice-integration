@@ -1,0 +1,85 @@
+/content/documents/myproject/faq:
+  .meta:order-before: content
+  jcr:primaryType: hippostd:folder
+  jcr:mixinTypes: ['hippotranslation:translated', 'mix:versionable']
+  jcr:uuid: a43af1a3-c01d-43b3-8d38-3b109e327105
+  hippostd:foldertype: [new-faq-list, new-faq-item-folder, new-faq-list-folder]
+  hippotranslation:id: 207d15df-22ce-4412-93fe-70dcd61276b9
+  hippotranslation:locale: en
+  /about-faq:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+    jcr:uuid: 6d1130dd-ba9f-481a-8a40-2d4d449da8a5
+    hippo:name: About FAQ
+    /about-faq:
+      jcr:primaryType: myproject:faqlist
+      jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: 83df8617-689b-40f8-8719-97f7c0dd5821
+      hippo:availability: [live, preview]
+      hippostd:state: published
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2014-06-20T12:07:14.294+02:00
+      hippostdpubwf:lastModificationDate: 2014-06-20T12:07:14.903+02:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: f2bfc33f-8ebe-4ed9-9861-ded49a344011
+      hippotranslation:locale: en
+      myproject:title: FAQ
+      /myproject:description:
+        jcr:primaryType: hippostd:html
+        hippostd:content: <p>This is an example of FAQ document</p>
+      /myproject:faqitem[1]:
+        jcr:primaryType: hippo:mirror
+        hippo:docbase: 9b993b22-ae8c-4bdc-833e-5a8ce41d68f5
+      /myproject:faqitem[2]:
+        jcr:primaryType: hippo:mirror
+        hippo:docbase: 12863d11-40cc-4324-aeac-ffda4b787732
+  /about-faq-items:
+    jcr:primaryType: hippostd:folder
+    jcr:mixinTypes: ['hippo:named', 'hippotranslation:translated', 'mix:versionable']
+    jcr:uuid: 326fe261-bf01-435c-b9a2-fbe05d01b919
+    hippo:name: About FAQ items
+    hippostd:foldertype: [new-faq-item, new-faq-item-folder]
+    hippotranslation:id: 9a2b5aaa-6db8-4243-b657-4d51ddf0e7f6
+    hippotranslation:locale: en
+    /faq-item-1:
+      jcr:primaryType: hippo:handle
+      jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+      jcr:uuid: 9b993b22-ae8c-4bdc-833e-5a8ce41d68f5
+      hippo:name: FAQ Item 1
+      /faq-item-1:
+        jcr:primaryType: myproject:faqitem
+        jcr:mixinTypes: ['mix:referenceable']
+        jcr:uuid: 6e4aec56-b96d-4851-8301-a49cecabb18f
+        hippo:availability: [live, preview]
+        hippostd:state: published
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2014-06-20T12:08:30.112+02:00
+        hippostdpubwf:lastModificationDate: 2014-06-20T12:08:30.207+02:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: 156a98cf-3c1c-4b33-9245-1289ff5c5d45
+        hippotranslation:locale: en
+        myproject:question: What is this?
+        /myproject:answer:
+          jcr:primaryType: hippostd:html
+          hippostd:content: <p>This is FAQ item 1</p>
+    /faq-item-2:
+      jcr:primaryType: hippo:handle
+      jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+      jcr:uuid: 12863d11-40cc-4324-aeac-ffda4b787732
+      hippo:name: FAQ Item 2
+      /faq-item-2:
+        jcr:primaryType: myproject:faqitem
+        jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+        jcr:uuid: 2fddb570-419b-4e10-99eb-e3c84d8530cd
+        hippo:availability: [live, preview]
+        hippostd:state: published
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2014-06-20T12:08:30.112+02:00
+        hippostdpubwf:lastModificationDate: 2014-06-20T12:09:01.816+02:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: fddfa48f-1cd4-4599-bbe5-ff4e3253ea7a
+        hippotranslation:locale: en
+        myproject:question: What is this?
+        /myproject:answer:
+          jcr:primaryType: hippostd:html
+          hippostd:content: <p>This is FAQ item 2</p>
