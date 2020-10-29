@@ -1,6 +1,6 @@
 <#include "../include/imports.ftl">
 
-<div class="jumbotron">
+<div class="jumbotron" style="background: antiquewhite">
     <h3 class="display-6">Comments:</h3>
     <hr/>
     <#list comments as comment>
