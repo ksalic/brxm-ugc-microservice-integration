@@ -1,7 +1,4 @@
-<#assign hst=JspTaglibs["http://www.hippoecm.org/jsp/hst/core"] >
-<#assign fmt=JspTaglibs ["http://java.sun.com/jsp/jstl/fmt"] >
-
-<@hst.defineObjects />
+<#include "../include/imports.ftl">
 
 <div class="jumbotron">
     <h3 class="display-6">Comments:</h3>

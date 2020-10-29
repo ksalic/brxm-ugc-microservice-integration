@@ -1,0 +1,6 @@
+group:
+    name: brxm-ugc-module
+    after: hippo-cms
+project: brxm-ugc-module
+module:
+    name: brxm-ugc-module-hcm-site
