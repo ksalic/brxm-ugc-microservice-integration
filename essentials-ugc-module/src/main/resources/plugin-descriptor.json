@@ -6,10 +6,11 @@
   "description": "<ul><li>This feature installs a new perspective: 'User Generated Content' in the CMS.</li><li>A configurable drag-and-drop component 'Comments' is added to the component library in the Channel Manager.</li></ul>",
   "documentationLink": "https://github.com/ksalic/brxm-ugc-microservice-integration",
   "imageUrls": [
-    "/essentials/feature/images/screenshots/news01.png",
-    "/essentials/feature/images/screenshots/news02.png",
-    "/essentials/feature/images/screenshots/news03.png",
-    "/essentials/feature/images/screenshots/news04.png"
+    "/essentials/feature/images/screenshots/ugc1.png",
+    "/essentials/feature/images/screenshots/ugc2.png",
+    "/essentials/feature/images/screenshots/ugc3.png",
+    "/essentials/feature/images/screenshots/ugc4.png",
+    "/essentials/feature/images/screenshots/ugc5.png"
   ],
   "packageFile": "/META-INF/ugc_package_instructions.xml",
   "type": "feature",

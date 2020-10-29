@@ -21,7 +21,7 @@
     </#list>
 </div>
 
-<div class="jumbotron">
+<div class="jumbotron" style="background: antiquewhite">
     <h3 class="display-6">Place a comment:</h3>
     <hr/>
     <@hst.actionURL var="actionLink"/>
