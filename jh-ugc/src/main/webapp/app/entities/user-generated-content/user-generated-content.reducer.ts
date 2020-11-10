@@ -1,10 +1,11 @@
 import axios from 'axios';
-import { ICrudGetAction, ICrudGetAllAction, ICrudPutAction, ICrudDeleteAction } from 'react-jhipster';
+import { ICrudDeleteAction, ICrudGetAction, ICrudGetAllAction, ICrudPutAction } from 'react-jhipster';
 
 import { cleanEntity } from 'app/shared/util/entity-utils';
-import { REQUEST, SUCCESS, FAILURE } from 'app/shared/reducers/action-type.util';
+import { FAILURE, REQUEST, SUCCESS } from 'app/shared/reducers/action-type.util';
 
-import { IUserGeneratedContent, defaultValue } from 'app/shared/model/user-generated-content.model';
+import { defaultValue, IUserGeneratedContent } from 'app/shared/model/user-generated-content.model';
+import { IPayload } from 'react-jhipster/src/type/redux-action.type';
 
 export const ACTION_TYPES = {
   FETCH_USERGENERATEDCONTENT_LIST: 'userGeneratedContent/FETCH_USERGENERATEDCONTENT_LIST',
@@ -123,6 +124,16 @@ export const getEntity: ICrudGetAction<IUserGeneratedContent> = id => {
     payload: axios.get<IUserGeneratedContent>(requestUrl),
   };
 };
+
+// export type ICrudGetChannelAndPageAction<T> = (channel: string, page: String) => IPayload<T> | ((dispatch: any) => IPayload<T>);
+//
+// export const getEntitiesByChannelAndPage: ICrudGetChannelAndPageAction<IUserGeneratedContent> = (channel:string, page:string) => {
+//   const requestUrl = `${apiUrl}/channel/${channel}/page/${page}`;
+//   return {
+//     type: ACTION_TYPES.FETCH_USERGENERATEDCONTENT,
+//     payload: axios.get<IUserGeneratedContent>(requestUrl),
+//   };
+// };
 
 export const createEntity: ICrudPutAction<IUserGeneratedContent> = entity => async dispatch => {
   const result = await dispatch({

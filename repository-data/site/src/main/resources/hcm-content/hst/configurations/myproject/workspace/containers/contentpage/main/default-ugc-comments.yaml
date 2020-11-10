@@ -1,0 +1,6 @@
+/hst:hst/hst:configurations/myproject/hst:workspace/hst:containers/contentpage/main/default-ugc-comments:
+  jcr:primaryType: hst:containeritemcomponent
+  hst:componentclassname: org.example.ugc.components.UgcCommentComponent
+  hst:iconpath: images/essentials/catalog-component-icons/ugc-comments.svg
+  hst:label: Default UGC Comments
+  hst:template: ugc-comments.ftl

@@ -1,0 +1,7 @@
+definitions:
+  config:
+    /hippo:configuration/hippo:frontend/cms/ui-extensions/ugc:
+      jcr:primaryType: frontend:uiExtension
+      frontend:displayName: User Generated Content
+      frontend:extensionPoint: channel.page.tools
+      frontend:url: http://localhost:9090/user-generated-content

@@ -24,7 +24,7 @@ definitions:
           hippo:identifier: 6dd65a22-d701-4fa1-94b8-057917aa0549
           hst:label: Home Page Main
           hst:xtype: hst.vbox
-          hst:lastmodified: 2020-10-22T12:22:44.131+02:00
+          hst:lastmodified: 2020-11-10T15:08:27.258+01:00
       /pagenotfound:
         jcr:primaryType: hst:containercomponentfolder
         /main:
@@ -74,4 +74,4 @@ definitions:
           hippo:identifier: 3f4664d5-c206-49e9-8f3b-24eef08edf66
           hst:label: Content Page Main
           hst:xtype: hst.vbox
-          hst:lastmodified: 2020-10-22T12:22:44.131+02:00
+          hst:lastmodified: 2020-11-10T14:39:53.030+01:00
